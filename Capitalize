@@ -2,17 +2,17 @@ def mimic_capitalize(s):
     if len(s)==0:
         return s
     else:
-        result =""
+        result=" "
         fc=s[0]
-        if "a"<=fc<="z":
+        if 'a'<=fc<='z':
             result+=chr(ord(fc)-32)
         else:
             result+=fc
-        for i in len(s[1:]):
-            if "A"<=i<="Z":
+        for i in s[1: ]:
+            if 'A'<=i<='Z':
                 result+=chr(ord(i)+32)
             else:
                 result+=i
     return result
-my_str="she sells sea shells on the sea shore"
+my_str="shE seLLs Sea SheLlS oN The ShoRe"
 mimic_capitalize(my_str)
